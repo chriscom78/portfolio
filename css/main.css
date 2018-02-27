@@ -6,7 +6,7 @@
 
 
 body {
-margin-top: 20px;
+margin: 20px 0 0 -20px;
 margin-bottom: -20px;
 }
 
@@ -14,30 +14,21 @@ margin-bottom: -20px;
 
 h1
 {
-font-family: 'Roboto Slab', serif;
+font-family: 'Roboto Slab', serif 1.5em;
 font-size: 1.5em;
 }
 h2 {
-color : #555;
-text-align : center;
-font-size : 2em;
 }
 
 h3 {
-font-family: 'Bitter', serif;
-color : #444;
-font-size : 1.5em;
-line-height : 1.5em;
+font-family: 'Bitter', serif #444 1.5em/1.5em;
 }
 
-h4 {font-size: 0.7em;
-font-family: 'Bitter', serif;
+h4 {font-size: 0.7em emfont-family: 'Bitter', serif;
 }
 /* ===== TODO: ADD SIDE MENU; =======*/
 .sidebar {
-position : fixed;
-top : 0;
-right : 0;
+position : fixed top 0 right 0;
 background-color : #7d97ad;
 height : 60px;
 width : 100px;
@@ -66,15 +57,10 @@ padding-bottom : 10px;
 
 .header-title {
 order : 2;
-text-align : center;
 vertical-align : middle;
-font-size : 20px;
-line-height : 0.2em;
-font-family : 'Open Sans', sans-serif;
-font-weight : lighter;
-text-transform : uppercase;
 width : 100%;
 min-width : 300px;
+font: 'Open Sans', sans-serif, lighter uppercase 20px/0.2em center;
 }
 
 .header-logo {
@@ -112,10 +98,7 @@ width : 100%;
 
 .main-image-box {
 order : 4;
-background-image : url("../img/code-image-background.jpg");
-background-repeat : no-repeat;
-background-size : cover;
-background-position : center;
+background-image : url("../img/code-image-background.jpg") no-repeat cover center;  
 min-width : 200px;
 min-height : 100px;
 width : 100%;
@@ -125,8 +108,7 @@ height : 450px;
 /* ===== ALIGN CONTENT VERTICALLY =======*/
 
 .v-align {
-position : relative;
-top : 50%;
+position : relative top 50%;
 transform : translateY(-50%);
 }
 
@@ -230,10 +212,8 @@ margin-top: 20px;
 }
 
 .about-me-photo {
-margin-left:10px;
-margin-top: 30px;
-border-width: 2px;
-border-style: solid;
+margin: 30px 0 0 10px;
+border-width: 2px solid;
 max-height : 150px;
 }
 
@@ -263,17 +243,12 @@ flex-wrap: wrap;
 height: 40PX;
 width: 100%;
 max-width: 1200px;
-margin-right: auto;
-margin-left: auto;
-margin-top: 40px;
-padding-top: 20px;
+margin: 40px auto 0 auto;
 }
 .foot-content {
 font-size : 20px;
 color : #fff;
-margin-right: auto;
-margin-left: auto;
-}
+margin: 0 auto 0 auto;}
 
 /* ===== NOW WE SET THE SIZES DEPENING ON THE WIDTH AND HIGHT =======*/
 /* =====       OF THE SCREEN IT IS BEING VIEWED ON =======*/
@@ -282,8 +257,7 @@ margin-left: auto;
 .header-title {
 text-align : right;
 width : 70%;
-font-size : 30px;
-line-height : 0.5em;
+font-size : 30px/0.5em;
 }
 
 .header-logo {
@@ -323,7 +297,7 @@ width : 30%;
 }
 .boxtext {
 width : 60%;
-padding-left: 50px;
+padding: 0 0 0 50px;
 }
 .about-me-text {
 width:70%;
@@ -353,7 +327,7 @@ width:70%;
 }
 
 .boxtext {
-	padding-left: 30px;
+	padding: 0 0 0 30px;
 	width : 60%;
 }
 
@@ -379,15 +353,13 @@ color: #fff;
 .boxtext {
 width : 100%;
 text-align: center;
-margin-right : auto;
-margin-left : auto;
+margin: 0 auto 0 auto;
 }
 
 .header-title {
 text-align : right;
 width : 70%;
-font-size : 30px;
-line-height : 0.5em;
+font-size : 30px/0.5em;
 }
 
 .header-logo {
@@ -401,8 +373,7 @@ width : 29%;
 }
 
 .middle {
-margin-right : auto;
-margin-left : auto;
+margin: 0 auto 0 auto;
 width : 30%;
 }
 
