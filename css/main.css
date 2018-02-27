@@ -6,204 +6,222 @@
 
 
 body {
-margin: 20px 0 0 -20px;
-margin-bottom: -20px;
+	margin-top: 20px;
+	margin-bottom: -20px;
 }
 
 /* ===== H 1, 2,3 AND 4 =======*/
 
-h1
-{
-font-family: 'Roboto Slab', serif 1.5em;
-font-size: 1.5em;
+h1{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.5em;
 }
-h2 {
+h2{
+	color : #555;
+	text-align : center;
+	font-size : 2em;
 }
 
 h3 {
-font-family: 'Bitter', serif #444 1.5em/1.5em;
+	font-family: 'Bitter', serif;
+	color : #444;
+	font-size : 1.5em;
+	line-height : 1.5em;
 }
 
-h4 {font-size: 0.7em emfont-family: 'Bitter', serif;
+h4 {
+	font-size: 0.7em;
+	font-family: 'Bitter', serif;
 }
 /* ===== TODO: ADD SIDE MENU; =======*/
 .sidebar {
-position : fixed top 0 right 0;
-background-color : #7d97ad;
-height : 60px;
-width : 100px;
-z-index : 100;
-overflow : hidden;
-text-align : center;
-transition-duration : 1s;
+	position : fixed;
+	top : 0;
+	right : 0;
+	background-color : #7d97ad;
+	height : 60px;
+	width : 100px;
+	z-index : 100;
+	overflow : hidden;
+	text-align : center;
+	transition-duration : 1s;
 }
 
 .button {
-text-transform : uppercase;
-text-align : left;
+	text-transform : uppercase;
+	text-align : left;
 }
 /* ===== THIS IS THE MAIN CONTAINER FOR EVERTHING BUT THE FOOTER =======*/
 .container {
-display : flex;
-flex-wrap : wrap;
-width : 100%;
-max-width : 1200px;
-margin-right : auto;
-margin-left : auto;
-padding-bottom : 10px;
+	display : flex;
+	flex-wrap : wrap;
+	width : 100%;
+	max-width : 1200px;
+	margin-right : auto;
+	margin-left : auto;
+	padding-bottom : 10px;
 }
 
 /* ===== SETTINFS FOR THE HEADER (LOGO AND TITLE) =======*/
 
 .header-title {
-order : 2;
-vertical-align : middle;
-width : 100%;
-min-width : 300px;
-font: 'Open Sans', sans-serif, lighter uppercase 20px/0.2em center;
+	order : 2;
+	text-align : center;
+	vertical-align : middle;
+	font-size : 20px;
+	line-height : 0.2em;
+	font-family : 'Open Sans', sans-serif;
+	font-weight : lighter;
+	text-transform : uppercase;
+	width : 100%;
+	min-width : 300px;
 }
 
 .header-logo {
-order : 1;
-overflow : hidden;
-width : 100%;
-align-content : center;
-text-align : center;
+	order : 1;
+	overflow : hidden;
+	width : 100%;
+	align-content : center;
+	text-align : center;
 }
 
 .logo {
-width : 150px;
-height : auto;
-animation : spin 35s infinite;
+	width : 150px;
+	height : auto;
+	animation : spin 35s infinite;
 }
 
-@keyframes spin {
-from {
-transform : rotateY(0deg);
-}
+	@keyframes spin {
+	from {
+		transform : rotateY(0deg);
+	}
 
-to {
-transform : rotateY(-360deg);
-}
+	to {
+		transform : rotateY(-360deg);
+	}
 }
 
 .line-under-header {
-order : 3;
-background : #91a6b9;
-background : linear-gradient(to right, #91a6b9 6%, #03c8ff 50%, #43596d 91%);
-max-height : 5px;
-min-height : 2px;
-width : 100%;
+	order : 3;
+	background : #91a6b9;
+	background : linear-gradient(to right, #91a6b9 6%, #03c8ff 50%, #43596d 91%);
+	max-height : 5px;
+	min-height : 2px;
+	width : 100%;
 }
 
 .main-image-box {
-order : 4;
-background-image : url("../img/code-image-background.jpg") no-repeat cover center;  
-min-width : 200px;
-min-height : 100px;
-width : 100%;
-height : 450px;
+	order : 4;
+	background-image : url("../img/code-image-background.jpg");
+	background-repeat : no-repeat;
+	background-size : cover;
+	background-position : center;
+	min-width : 200px;
+	min-height : 100px;
+	width : 100%;
+	height : 450px;
 }
 
 /* ===== ALIGN CONTENT VERTICALLY =======*/
 
 .v-align {
-position : relative top 50%;
-transform : translateY(-50%);
+	position : relative;
+	top : 50%;
+	transform : translateY(-50%);
 }
 
 /* ===== LARGE IMAGE UNDER THE HEADER ====*/  
 /*CSS IS USED FOR THE COLOURED LINES =====*/
 
 .responsive, .front-end, .design {
-width : 100%;
-height : 74px;
-max-height : 100px;
-font-size : 50px;
-color : #fff;
-text-align : center;
+	width : 100%;
+	height : 74px;
+	max-height : 100px;
+	font-size : 50px;
+	color : #fff;
+	text-align : center;
 }
 
 .responsive {
-background-color : #02b3e4;
+	background-color : #02b3e4;
 }
 
 .front-end {
-background-color : #2d3c49;
+	background-color : #2d3c49;
 }
 
 .design {
-background-color : #7d97ad;
+	background-color : #7d97ad;
 }
 /* ===== THREE BOXES =======*/
 /* ===== FEATURED WORK =======*/
 .left, .right, .middle{ 
-overflow: hidden;
-width: 100%;
-min-height: 150px;
-padding: 1em;
-background-color: #e9e9e9;
-transition: box-shadow 2S;
-box-shadow: 0 0 1px #2d3c49;
-margin-bottom: 20px;
+	overflow: hidden;
+	width: 100%;
+	min-height: 150px;
+	padding: 1em;
+	background-color: #e9e9e9;
+	transition: box-shadow 2S;
+	box-shadow: 0 0 1px #2d3c49;
+	margin-bottom: 20px;
 }
 /* ===== GLOW BLUE ON MOUSE OVER OR FINGER TAP =======*/
 .left:hover, .right:hover, .middle:hover {
-box-shadow: 1px 1px 2px #2d3c49, 0 0 25px #00a7d5, 0 0 5px #7d97ad;
-transition-duration: 2s;
+	box-shadow: 1px 1px 2px #2d3c49, 0 0 25px #00a7d5, 0 0 5px #7d97ad;
+	transition-duration: 2s;
 }
 
 
 .left:hover, .right:hover, .middle:hover {
-box-shadow : 1px 1px 2px #2d3c49, 0 0 25px #00a7d5, 0 0 5px #7d97ad;
-transition-duration : 2s;
+	box-shadow : 1px 1px 2px #2d3c49, 0 0 25px #00a7d5, 0 0 5px #7d97ad;
+	transition-duration : 2s;
 }
 
 .mockup-image-div {
-width : 100%;
-max-height : 200px;
-overflow : hidden;
-box-shadow : 1px 1px 2px #2d3c49, 0 0 25px #00a7d5, 0 0 5px #7d97ad;
+	width : 100%;
+	max-height : 200px;
+	overflow : hidden;
+	box-shadow : 1px 1px 2px #2d3c49, 0 0 25px #00a7d5, 0 0 5px #7d97ad;
 }
 /* ===== SETTINGS FOR THE CONTENT OF FEATURED WORK BOX =======*/
 .mockup-image {
-width : 100%;
-height : auto;
-max-height : 600px;
+	width : 100%;
+	height : auto;
+	max-height : 600px;
 }
 
 .boxtext {
-order : 2;
-width : 80%;
-overflow : hidden;
+	order : 2;
+	width : 80%;
+	overflow : hidden;
 }
 
 .github {
-width:30px;
-vertical-align: middle;
-padding: 5px;
+	width:30px;
+	vertical-align: middle;
+	padding: 5px;
 }
 
 /* ===== ORDER THE FEATURED WORK BOXES =======*/
 .left {
-order : 1;
+	order : 1;
 }
 
 .middle {
-order : 2;
+	order : 2;
 }
 
 .right {
-order : 3;
+	order : 3;
 }
 /* ===== ABOUT ME SECTION OF THE PAGE =======*/
 .about-me {
-display : flex;
-flex-wrap : wrap;
-background-color: #7d97ad;
-width:100%;
-padding: 10px;
-margin-top: 20px;
+	display : flex;
+	flex-wrap : wrap;
+	background-color: #7d97ad;
+	width:100%;
+	padding: 10px;
+	margin-top: 20px;
 }
 
 .about-me-photo-box{
@@ -212,172 +230,179 @@ margin-top: 20px;
 }
 
 .about-me-photo {
-margin: 30px 0 0 10px;
-border-width: 2px solid;
-max-height : 150px;
+	margin:30px 0px 0px 10px;;
+	border-width: 2px;
+	border-style: solid;
+	max-height : 150px;
 }
 
 .about-me-text {
-width:100%;
-color: #fff;
-padding-left: 10px;
+	width:100%;
+	color: #fff;
+	padding-left: 10px;
 }
+
 .clients-holder {
-flex-wrap: nowrap;
-width: 100%;
-background-color: #fff;
-text-align: center;
+	flex-wrap: nowrap;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
 
 }
 .clients {
-max-height: 50px;
-padding: 20px;
-width: auto;
+	max-height: 50px;
+	padding: 20px;
+	width: auto;
 
 }
 /* ===== AND HERE IS THE FOOTER =======*/
 .footer {
-background-color: #405e7e;
-display: flex;
-flex-wrap: wrap;
-height: 40PX;
-width: 100%;
-max-width: 1200px;
-margin: 40px auto 0 auto;
+	background-color: #405e7e;
+	display: flex;
+	flex-wrap: wrap;
+	height: 40PX;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto 0 auto;
+	padding-top: 20px;
 }
 .foot-content {
-font-size : 20px;
-color : #fff;
-margin: 0 auto 0 auto;}
+	font-size : 20px;
+	color : #fff;
+	margin: 0 auto 0 auto;
+}
 
 /* ===== NOW WE SET THE SIZES DEPENING ON THE WIDTH AND HIGHT =======*/
 /* =====       OF THE SCREEN IT IS BEING VIEWED ON =======*/
 
 @media screen and (min-width:575px) and (max-width: 650px) {
-.header-title {
-text-align : right;
-width : 70%;
-font-size : 30px/0.5em;
-}
+	.header-title {
+		text-align : right;
+		width : 70%;
+		font-size : 30px;
+		line-height : 0.5em;
+	}
 
-.header-logo {
-text-align : left;
-vertical-align : bottom;
-width : 30%;
-}
+	.header-logo {
+		text-align : left;
+		vertical-align : bottom;
+		width : 30%;
+	}
 
-.mockup-image-div {
-width : 30%;
-}
-.boxtext {
-width : 60%;
-padding-left: 20px;
-}
-.about-me-text {
-width:40%;
-}
+	.mockup-image-div {
+		width : 30%;
+	}
+	.boxtext {
+		width : 60%;
+		padding-left: 20px;
+	}
+	.about-me-text {
+		width:40%;
+	}
 }
 
 @media screen and (min-width:651px) and (max-width: 899px) {
-.header-title {
-text-align : right;
-width : 70%;
-font-size : 30px;
-line-height : 0.5em;
-}
+	.header-title {
+		text-align : right;
+		width : 70%;
+		font-size : 30px;
+		line-height : 0.5em;
+	}
 
-.header-logo {
-text-align : left;
-vertical-align : bottom;
-width : 30%;
-}
+	.header-logo {
+		text-align : left;
+		vertical-align : bottom;
+		width : 30%;
+	}
 
-.mockup-image-div {
-width : 30%;
-}
-.boxtext {
-width : 60%;
-padding: 0 0 0 50px;
-}
-.about-me-text {
-width:70%;
-}
+	.mockup-image-div {
+		width : 30%;
+	}
+	.boxtext {
+		width : 60%;
+		padding-left: 50px;
+	}
+	.about-me-text {
+		width:70%;
+	}
 }
 
 @media screen and (min-width:900px) and (max-width: 979px){
-.about-me-photo-box{
-	display: block;
-}
+	.about-me-photo-box{
+		display: block;
+	}
 
-.header-title {
-text-align : right;
-width : 70%;
-font-size : 30px;
-line-height : 0.5em;
-}
+	.header-title {
+		text-align : right;
+		width : 70%;
+		font-size : 30px;
+		line-height : 0.5em;
+	}
 
-.header-logo {
-text-align : left;
-vertical-align : bottom;
-width : 30%;
-}
-.about-me-text {
-width:70%;
+	.header-logo {
+		text-align : left;
+		vertical-align : bottom;
+		width : 30%;
+	}
+	.about-me-text {
+		width::70%;
 
-}
+	}
 
-.boxtext {
-	padding: 0 0 0 30px;
-	width : 60%;
-}
+	.boxtext {
+		padding-left: 30px;
+		width : 60%;
+	}
 
-.mockup-image-div {
-width : 35%;
-}
-
+	.mockup-image-div {
+		width : 35%;
+	}
 }
 
 @media screen and (min-width:980px) {
-.mockup-image-div {
-width : 100%;
-}
+	.mockup-image-div {
+		width : 100%;
+	}
 
-.about-me-photo-box{
-	display: block;
-}
-.about-me-text {
-width:70%;
-color: #fff;
-}
+	.about-me-photo-box{
+		display: block;
+	}
+	.about-me-text {
+		width:70%;
+		color: #fff;
+	}
 
-.boxtext {
-width : 100%;
-text-align: center;
-margin: 0 auto 0 auto;
-}
+	.boxtext {
+		width : 100%;
+		text-align: center;
+		margin-right : auto;
+		margin-left : auto;
+	}
 
-.header-title {
-text-align : right;
-width : 70%;
-font-size : 30px/0.5em;
-}
+	.header-title {
+		text-align : right;
+		width : 70%;
+		font-size : 30px;
+		line-height : 0.5em;
+	}
 
-.header-logo {
-text-align : left;
-vertical-align : bottom;
-width : 30%;
-}
+	.header-logo {
+		text-align : left;
+		vertical-align : bottom;
+		width : 30%;
+	}
 
-.left {
-width : 29%;
-}
+	.left {
+		width : 29%;
+	}
 
-.middle {
-margin: 0 auto 0 auto;
-width : 30%;
-}
+	.middle {
+		margin-right : auto;
+		margin-left : auto;
+		width : 30%;
+	}
 
-.right {
-width : 29%;
-}
+	.right {
+		width : 29%;
+	}
 }
